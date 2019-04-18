@@ -72,6 +72,8 @@ html {
 }
 
 #question {
+    display: flex;
+    align-items: center;
     padding: 10px;
     color: white;
     text-align: center;
@@ -79,7 +81,7 @@ html {
     min-width: 300px;
     width: 90%;
     min-height: 30%;
-    background-color: #284056;
+    background-color: #152636;
     margin: 30px auto 10px;
     position: relative;
     top: 5%;
@@ -189,6 +191,25 @@ html {
     -moz-box-shadow: 2px 2px 2px 0 #53687b;
     -webkit-box-shadow: 2px 2px 2px 0 #53687b;
     display: none;
+}
+
+#gameOver {
+    background-color: #10293d;
+    color: white;
+    font-size: 3em;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    bottom: 340px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
 }
 @media only screen and (max-width: 553px) {
     #choices {
