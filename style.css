@@ -16,7 +16,7 @@ html {
     width: 100%;
 }
 #container {
-    height: 450px;
+    height: 460px;
     width: 75%;
     max-width: 500px;
     background-color: #b5cadb;
@@ -24,6 +24,8 @@ html {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px 0 #10273b;
+    -moz-box-shadow: 4px 4px 10px 0 #10273b;
+    -webkit-box-shadow: 4px 4px 10px 0 #10273b;
     position: relative;
 }
 
@@ -36,6 +38,8 @@ html {
     border-radius: 10px;
     text-align: center;
     box-shadow: 1px 1px 2px 0 #53687b;
+    -moz-box-shadow: 1px 1px 2px 0 #53687b;
+    -webkit-box-shadow: 1px 1px 2px 0 #53687b;
     font-family: sans-serif;
 }
 
@@ -81,6 +85,8 @@ html {
     top: 5%;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 0 #53687b;
+    -moz-box-shadow: 2px 2px 2px 0 #53687b;
+    -webkit-box-shadow: 2px 2px 2px 0 #53687b;
     font-family: cursive, sans-serif;
 }
 
@@ -110,7 +116,8 @@ html {
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 0 #53687b;
-
+    -moz-box-shadow: 2px 2px 2px 0 #53687b;
+    -webkit-box-shadow: 2px 2px 2px 0 #53687b;
 }
 
 .choice {
@@ -138,6 +145,51 @@ html {
     top: 2px;
 }
 
+#startReset {
+    width: 28%;
+    background-color: #0f3963;
+    margin: 5px auto;
+    position: relative;
+    top: 45px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 2px 4px 0 #10273b;
+    -moz-box-shadow: 2px 2px 4px 0 #10273b;
+    -webkit-box-shadow: 2px 2px 4px 0 #10273b;
+}
+
+#startReset:hover {
+    color: #0f3963;
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 0 #53687b;
+    -moz-box-shadow: 2px 2px 2px 0 #53687b;
+    -webkit-box-shadow: 2px 2px 2px 0 #53687b;
+}
+
+#startReset:active {
+    top: 47px;
+}
+
+#timer {
+    width: 200px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    top: 55px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 2px 0 #53687b;
+    -moz-box-shadow: 2px 2px 2px 0 #53687b;
+    -webkit-box-shadow: 2px 2px 2px 0 #53687b;
+    display: none;
+}
 @media only screen and (max-width: 553px) {
     #choices {
         flex-direction: column;
@@ -146,5 +198,8 @@ html {
     .choice {
         width: 95%;
         margin: 5px auto;
+    }
+    #container {
+        height: 515px;
     }
 }
