@@ -195,22 +195,34 @@ html {
 }
 
 #gameOver {
-    background-color: #10293d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b1f1f;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     font-family: sans-serif;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     position: relative;
     z-index: 1;
+    bottom: 420px;
     margin: 0 auto;
-    bottom: 340px;
-    height: 380px;
+    height: 170px;
+    width: 100%;
+    right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     visibility: hidden;
+    box-shadow: 2px 2px 2px 0 #540505;
+    -moz-box-shadow: 2px 2px 2px 0 #540505;
+    -webkit-box-shadow: 2px 2px 2px 0 #540505;
+}
+#gameOver p {
+    padding: 0;
+    margin: 0;
 }
 @media only screen and (max-width: 553px) {
     #choices {
