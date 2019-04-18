@@ -16,7 +16,7 @@ html {
     width: 100%;
 }
 #container {
-    height: 460px;
+    height: 480px;
     width: 75%;
     max-width: 500px;
     background-color: #b5cadb;
@@ -73,6 +73,7 @@ html {
 
 #question {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     color: white;
