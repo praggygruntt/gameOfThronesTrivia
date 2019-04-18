@@ -5,10 +5,10 @@ html {
 }
 
 #logoContainer {
-    margin: 30px auto;
-    margin-top: 60px;
+    margin: 20px auto;
+    margin-top: 40px;
     width: 85%;
-    max-width: 500px; 
+    max-width: 450px; 
     text-align: center;
 }
 #logoContainer img {
@@ -36,6 +36,7 @@ html {
     border-radius: 10px;
     text-align: center;
     box-shadow: 1px 1px 2px 0 #53687b;
+    font-family: sans-serif;
 }
 
 #correct {
@@ -64,4 +65,86 @@ html {
     position: relative;
     top: 30px;
     display: none;
+}
+
+#question {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    min-width: 300px;
+    width: 90%;
+    min-height: 30%;
+    background-color: #284056;
+    margin: 30px auto 10px;
+    position: relative;
+    top: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 #53687b;
+    font-family: cursive, sans-serif;
+}
+
+#instruction {
+    width: 90%;
+    color: #284056;
+    background-color: #9badbd;
+    border-radius: 10px;
+    height: 25px;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+
+#choices {
+    width: 90%;
+    min-height: 25%;
+    background-color: #233644;
+    margin: 0 auto;
+    position: relative;
+    top: 35px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 #53687b;
+
+}
+
+.choice {
+    width: 24%;
+    min-height: 90%;
+    background-color: #e2ebf4;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #476680;
+    color: white;
+}
+
+.choice:active {
+    position: relative;
+    top: 2px;
+}
+
+@media only screen and (max-width: 553px) {
+    #choices {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .choice {
+        width: 95%;
+        margin: 5px auto;
+    }
 }
