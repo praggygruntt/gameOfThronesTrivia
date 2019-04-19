@@ -4,6 +4,7 @@ const startReset    = document.getElementById("startReset");
 const scoreValue    = document.getElementById("score");
 const timer         = document.getElementById("timer");
 const timerValue    = document.getElementById("timerValue");
+const finalScore    = document.getElementById("finalScore");
 const gameOver      = document.getElementById("gameOver");
 const correct       = document.getElementById("correct");
 const wrong         = document.getElementById("correct");
@@ -24,13 +25,16 @@ startReset.onclick = function() {
     if(playing === true) {
 
         // Reload page
-        location.reload();
+        location.reload(true);
 
     } 
         // Start Playing
         else {
             // Change mode from not playing to playing
             playing = true;
+
+            // Take Away Game Over Element
+            gameOver.style.visibility = "hidden";
 
             // Change start button to reset button
             startReset.innerHTML = "Reset Game";
@@ -61,17 +65,17 @@ const startCountdown = () => {
         // check if time is out
         if(timeRemaining === 0) {
             stopCountdown();
-            gameOver.style.visibility = "visible";
-            timer.style.display = "none";
-            correct.style.display = "none";
-            wrong.style.display = "none";
-            playing = false;
         }
     }, 100);
 };
 
 // Stop Countdown Function
 const stopCountdown = () => {
+    gameOver.style.visibility = "visible";
+    finalScore.innerHTML = score;
+    timer.style.display = "none";
+    correct.style.display = "none";
+    wrong.style.display = "none";
     clearInterval(action);
 };
 
