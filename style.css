@@ -53,7 +53,7 @@ html {
     text-align: center;
     margin: 0 auto;
     position: relative;
-    top: 28px;
+    top: 18px;
     display: none;
 }
 
@@ -67,7 +67,7 @@ html {
     text-align: center;
     margin: 0 auto;
     position: relative;
-    top: 30px;
+    top: 20px;
     display: none;
 }
 
@@ -234,6 +234,7 @@ html {
         margin: 5px auto;
     }
     #container {
-        height: 515px;
+        height: 555px;
+        font-size: 14px;
     }
 }
